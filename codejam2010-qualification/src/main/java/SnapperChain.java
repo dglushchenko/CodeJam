@@ -2,13 +2,26 @@ import java.util.Scanner;
 
 public class SnapperChain {
 
-	private static long pow(long base, long exp) {
+	/*private static long pow(long base, long exp) {
 		long result = 1;
 		
 		while (exp-- > 0) {
 			result *= base;
 		}
 		
+		return result;
+	}*/
+	
+	private static long pow(long base, long exp) {
+		long result = 1;
+		while (exp > 0) {
+			if (exp % 2 != 0) {
+				result *= base;
+				exp--;
+			}
+			base *= base;
+			exp /= 2;
+		}
 		return result;
 	}
 
