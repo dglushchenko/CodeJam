@@ -1,18 +1,9 @@
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-import java.io.Writer;
 import java.util.Scanner;
 
 public class SnapperChain {
-
-	/*
-	 * private static long pow(long base, long exp) { long result = 1;
-	 * 
-	 * while (exp-- > 0) { result *= base; }
-	 * 
-	 * return result; }
-	 */
 
 	private static long pow(long base, long exp) {
 		long result = 1;
